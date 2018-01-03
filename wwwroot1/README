@@ -1,0 +1,23 @@
+- Python sockjs server setup
+$virtualenv testenv
+$source testenv/bin/activate
+$pip install twisted==15.0.0 txsockjs
+$python twisted-sockjs.py
+
+- Sockjs client setup
+$npm install
+$node server.js
+
+- Test
+Open http://localhost:9999 in a web browser(e.g. chrome), and input some message into the input box, and type Enter.
+The server will echo the message received.
+
+- In the python virtual environment, upgrade twisted (to 16.5.0 or 16.6.0), and restart the sockjs server
+$pip install twisted==16.5.0
+$python twisted-sockjs.py
+
+- Problem
+Server can not receive the messages from the client, and can not echo the messages.
+
+- Conclusion
+The txsockjs package is not compatible with the latest twisted version, the server can send messages to the clients, but can not receive messages from the clients.

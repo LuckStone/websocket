@@ -1,0 +1,8 @@
+*.pyc
+*.log
+*.prefs
+*.git
+.ropeproject
+.pydevproject
+.project
+.settings
