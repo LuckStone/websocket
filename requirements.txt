@@ -1,4 +1,4 @@
 Twisted==16.2.0
 zope.interface==4.2.0
-paramiko==2.1.2
+paramiko==2.1.5
 txsockjs==1.2.2
